@@ -1,0 +1,13 @@
+{
+  "name": "tol-uitest",
+  "version": "0.1.0",
+  "description": "TraderOnline UI Tests",
+  "scripts": {
+    "start": "casperjs test recmobile-cycle"
+  },
+  "dependencies":  {
+    "casperjs": "~1.1",
+    "phantomjs": "~1.9",
+    "underscore": "~1.5"
+  }
+}
