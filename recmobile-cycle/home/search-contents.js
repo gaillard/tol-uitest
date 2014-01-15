@@ -18,7 +18,8 @@ casper.test.begin('The recmobile-cycle homepage search box', function(test) {
     var makeSelector = searchBoxSelector + ' select#makeSelect';
     test.assertExists(makeSelector, 'The make dropdown exists');
     test.assertFieldCSS(makeSelector, '', 'The make dropdown defaults to nothing');
-    // TODO: Add some tests for the contents of this dropdown once it is defaulting correctly.
+    test.assertSelectorHasText(makeSelector, 'HONDA', 'The make dropdown includes HONDA');
+    test.assertSelectorHasText(makeSelector, 'VESPA', 'The make dropdown includes VESPA');
   });
 
   casper.run(function() {
