@@ -4,7 +4,7 @@ casper.test.begin('The recmobile-cycle search results', function(test) {
   test.comment('-- using domain: ' + settings.domain);
 
   casper.start(settings.domain, function() {
-    casper.fill('form#searchForm', {makeDisplayName: 'YAMAHA'}, true);
+    casper.fill('form#searchForm', {make: 'YAMAHA'}, true);
   });
 
   casper.then(function() {
