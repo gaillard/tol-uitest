@@ -1,6 +1,6 @@
 {
     "name": "dominionenterprises/tol-uitest",
-    "description": "PHP Code Repository for all TOL cloud sites",
+    "description": "UI Test Suite for TOL websites.",
     "authors": [
         {
             "name": "Spencer Rinehart",
