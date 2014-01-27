@@ -11,7 +11,7 @@ casper.test.begin('The recmobile-cycle homepage search box', function(test) {
   casper.then(function() {
     var classSelector = searchBoxSelector + ' select#classSelect';
     test.assertExists(classSelector, 'The class dropdown exists');
-    test.assertFieldCSS(classSelector, '356953', 'The class dropdown defaults to Motorcycle');
+    test.assertFieldCSS(classSelector, 'Motorcycle|356953', 'The class dropdown defaults to Motorcycle');
   });
 
   casper.then(function() {
