@@ -1,0 +1,17 @@
+{
+    "name": "dominionenterprises/tol-uitest",
+    "description": "PHP Code Repository for all TOL cloud sites",
+    "authors": [
+        {
+            "name": "Spencer Rinehart",
+            "email": "spencer.rinehart@dominionenterprises.com",
+            "role": "Developer"
+        },
+        {
+            "name": "Anthony Bittle",
+            "email": "robert.bittle@dominionenterprises.com",
+            "role": "Developer"
+        }
+    ],
+    "license": "proprietary"
+}
