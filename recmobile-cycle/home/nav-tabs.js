@@ -18,7 +18,7 @@ casper.test.begin('The recmobile-cycle homepage navigation tabs', function(test)
 
   casper.then(function() {
     var sellTabSelector = navListSelector + ' li#tab3 a';
-    test.assertSelectorHasText(sellTabSelector, 'Sell Your Motorcycle', 'The sell tab has the correct text');
+    test.assertSelectorHasText(sellTabSelector, 'Sell a Motorcycle', 'The sell tab has the correct text');
     test.assert(/\/listings\/photos\//.test(casper.getElementAttribute(sellTabSelector, 'href')), 'The sell tab links correctly');
   });
 
