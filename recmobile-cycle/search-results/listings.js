@@ -9,8 +9,12 @@ casper.test.begin('The recmobile-cycle search results', function(test) {
 
   casper.then(function() {
     var headerSelector = '#mobHdr .mobHdrTxt';
-    test.assertExists(headerSelector, 'The header text exists');
-    test.assertSelectorHasText(headerSelector, 'Results', 'The header has the correct text');
+    casper.waitForSelector(headerSelector, function() {
+      test.assertExists(headerSelector, 'The header text exists');
+      test.assertSelectorHasText(headerSelector, 'Results', 'The header has the correct text');
+    }, function() {
+      test.fail('Page failed to load');
+    }, 10000);
   });
 
   casper.then(function() {
