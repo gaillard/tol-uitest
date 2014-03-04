@@ -9,16 +9,22 @@ npm install
 ```
 
 ## Executing the Tests
-Once the dependencies are installed you can execute the test suites via:
+Once the dependencies are installed you can execute tests for all the sites via:
 
 ```sh
 npm start
 ```
 
-Optionally, you can change the domain name to hit like below:
+or a single site via:
 
 ```sh
-DOMAIN='http://localhost:8005' npm start
+npm run recmobile-cycle
+```
+
+Optionally, you can change the site domain to hit with environment variables `RECMOBILE_CYCLE_DOMAIN` or `COMMOBILE_TRUCK_DOMAIN` like below:
+
+```sh
+RECMOBILE_CYCLE_DOMAIN='http://localhost:8005' npm run recmobile-cycle
 ```
 
 

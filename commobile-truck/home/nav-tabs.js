@@ -1,11 +1,11 @@
 var settings = require('../settings');
 
-casper.test.begin('The recmobile-cycle homepage navigation tabs', function(test) {
-  test.comment('-- using domain: ' + settings.recmobileCycleDomain);
+casper.test.begin('The commobile-truck homepage navigation tabs', function(test) {
+  test.comment('-- using domain: ' + settings.commobileTruckDomain);
 
   var navListSelector = '.qkSrchNavTabs .qkSrchNav';
 
-  casper.start(settings.recmobileCycleDomain, function() {
+  casper.start(settings.commobileTruckDomain, function() {
     test.assertExists(navListSelector, 'The navigation tabs exist');
     test.assertElementCount(navListSelector + ' li', 2, 'There are 2 tabs');
   });

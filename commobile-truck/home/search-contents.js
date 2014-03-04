@@ -1,10 +1,10 @@
 var settings = require('../settings');
 
-casper.test.begin('The recmobile-cycle homepage search box', function(test) {
-  test.comment('-- using domain: ' + settings.recmobileCycleDomain);
+casper.test.begin('The commobile-truck homepage search box', function(test) {
+  test.comment('-- using domain: ' + settings.commobileTruckDomain);
 
   var searchBoxSelector = '.qkSrchBox #searchForm';
-  casper.start(settings.recmobileCycleDomain, function() {
+  casper.start(settings.commobileTruckDomain, function() {
     test.assertExists(searchBoxSelector, 'The search box exists');
   });
 
