@@ -1,5 +1,5 @@
 var _ = require('underscore');
 var system = require('system');
 
-var settings = {domain: system.env.DOMAIN};
-module.exports = _.defaults(settings, {domain: 'http://m.cycletrader.com'});
+var settings = {recmobileCycleDomain: system.env.RECMOBILE_CYCLE_DOMAIN};
+module.exports = _.defaults(settings, {recmobileCycleDomain: 'http://m.cycletrader.com'});

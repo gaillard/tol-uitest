@@ -18,7 +18,7 @@ npm start
 Optionally, you can change the domain name to hit like below:
 
 ```sh
-DOMAIN='http://localhost:8005' npm start
+RECMOBILE_CYCLE_DOMAIN='http://localhost:8005' npm start
 ```
 
 
