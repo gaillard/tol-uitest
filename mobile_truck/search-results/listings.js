@@ -1,9 +1,9 @@
 var settings = require('../settings');
 
-casper.test.begin('The commobile-truck search results', function(test) {
-  test.comment('-- using domain: ' + settings.commobileTruckDomain);
+casper.test.begin('The mobile-truck search results', function(test) {
+  test.comment('-- using domain: ' + settings.mobileTruckDomain);
 
-  casper.start(settings.commobileTruckDomain, function() {
+  casper.start(settings.mobileTruckDomain, function() {
     casper.fill('form#searchForm', {make: 'Yamaha|2321194'}, true);
   });
 

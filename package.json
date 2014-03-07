@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "description": "TraderOnline UI Tests",
   "scripts": {
-    "start": "casperjs test recmobile-cycle commobile-truck",
-    "recmobile-cycle": "casperjs test recmobile-cycle",
-    "commobile-truck": "casperjs test commobile-truck"
+    "start": "casperjs test mobile_cycle mobile_truck",
+    "mobile_cycle": "casperjs test mobile_cycle",
+    "mobile_truck": "casperjs test mobile_truck"
   },
   "dependencies":  {
     "casperjs": "~1.1",

@@ -1,9 +1,9 @@
 var settings = require('../settings');
 
-casper.test.begin('The recmobile-cycle browse by make list', function(test) {
-  test.comment('-- using domain: ' + settings.recmobileCycleDomain);
+casper.test.begin('The mobile-cycle browse by make list', function(test) {
+  test.comment('-- using domain: ' + settings.mobileCycleDomain);
 
-  casper.start(settings.recmobileCycleDomain, function() {
+  casper.start(settings.mobileCycleDomain, function() {
     casper.clickLabel('Find by Make', 'a');
   });
 
