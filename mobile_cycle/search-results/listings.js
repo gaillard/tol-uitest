@@ -1,9 +1,9 @@
 var settings = require('../settings');
 
-casper.test.begin('The recmobile-cycle search results', function(test) {
-  test.comment('-- using domain: ' + settings.recmobileCycleDomain);
+casper.test.begin('The mobile-cycle search results', function(test) {
+  test.comment('-- using domain: ' + settings.mobileCycleDomain);
 
-  casper.start(settings.recmobileCycleDomain, function() {
+  casper.start(settings.mobileCycleDomain, function() {
     casper.fill('form#searchForm', {make: 'Yamaha|2321194'}, true);
   });
 

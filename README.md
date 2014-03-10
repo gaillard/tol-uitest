@@ -18,13 +18,13 @@ npm start
 or a single site via:
 
 ```sh
-npm run recmobile-cycle
+npm run mobile_cycle
 ```
 
-Optionally, you can change the site domain to hit with environment variables `RECMOBILE_CYCLE_DOMAIN` or `COMMOBILE_TRUCK_DOMAIN` like below:
+Optionally, you can change the site domain to hit with environment variables `MOBILE_CYCLE_DOMAIN` or `MOBILE_TRUCK_DOMAIN` like below:
 
 ```sh
-RECMOBILE_CYCLE_DOMAIN='http://localhost:8005' npm run recmobile-cycle
+MOBILE_CYCLE_DOMAIN='http://localhost:8005' npm run mobile_cycle
 ```
 
 

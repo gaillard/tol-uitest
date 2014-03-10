@@ -1,9 +1,9 @@
 var settings = require('../settings');
 
-casper.test.begin('The commobile-truck browse by make list', function(test) {
-  test.comment('-- using domain: ' + settings.commobileTruckDomain);
+casper.test.begin('The mobile-truck browse by make list', function(test) {
+  test.comment('-- using domain: ' + settings.mobileTruckDomain);
 
-  casper.start(settings.commobileTruckDomain, function() {
+  casper.start(settings.mobileTruckDomain, function() {
     casper.clickLabel('Find by Make', 'a');
   });
 
